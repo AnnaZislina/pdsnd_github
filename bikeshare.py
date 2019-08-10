@@ -29,7 +29,7 @@ def get_filters():
         city = input('Type here: ')
         
         if city.lower() not in cities:
-            print('Invalid input!\n')
+            print('Invalid input entered.\n')
             continue
         
         break
@@ -42,7 +42,7 @@ def get_filters():
         month = input('Type here: ')
         
         if (month.lower() != 'all') and (month.lower() not in months):
-            print('Invalid input!\n')
+            print('Invalid input entered.\n')
             continue
         
         break
@@ -56,7 +56,7 @@ def get_filters():
         day = input('Type here: ')
         
         if (day.lower() != 'all') and (day.lower() not in days):
-            print('Invalid input!\n')
+            print('Invalid input entered.\n')
             continue
         
         break
@@ -212,7 +212,7 @@ def display_data(df):
         elif answer.lower() == 'no':
             return
         else:
-            print('Invalid input! Please type \'yes\' or \'no\'')   
+            print('Invalid input entered. Please type \'yes\' or \'no\'')   
 
 
 def main():
