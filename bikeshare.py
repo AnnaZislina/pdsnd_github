@@ -216,6 +216,7 @@ def display_data(df):
 
 
 def main():
+	"""Main function that starts the while program and takes input from the user"""
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
