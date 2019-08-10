@@ -26,10 +26,10 @@ def get_filters():
         print('Please choose a city to get data from.')
         print('Options: chicago, new york city, washington')
         
-        city = input('Your pick: ')
+        city = input('Type here: ')
         
         if city.lower() not in cities:
-            print('Invalid input!\n')
+            print('Invalid input entered.\n')
             continue
         
         break
@@ -39,10 +39,10 @@ def get_filters():
         print('Please choose a month to get data from.')
         print('Options: all, january, february, ... , june')
         
-        month = input('Your pick: ')
+        month = input('Type here: ')
         
         if (month.lower() != 'all') and (month.lower() not in months):
-            print('Invalid input!\n')
+            print('Invalid input entered.\n')
             continue
         
         break
@@ -53,10 +53,10 @@ def get_filters():
         print('Please choose a day to get data from.')
         print('Options: all, monday, tuesday, ... sunday')
         
-        day = input('Your pick: ')
+        day = input('Type here: ')
         
         if (day.lower() != 'all') and (day.lower() not in days):
-            print('Invalid input!\n')
+            print('Invalid input entered.\n')
             continue
         
         break
@@ -122,7 +122,7 @@ def time_stats(df):
     popular_hour = (df['hour'].mode())[0]
     print('Most Frequent Start Hour: {}:00'.format(popular_hour))
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nCalculation time: %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
@@ -145,7 +145,7 @@ def station_stats(df):
     popular_route = (df['Route'].mode())[0]
     print('Most frequent trip: From', popular_route) 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nCalculation time: %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
@@ -163,7 +163,7 @@ def trip_duration_stats(df):
     mean_duration = df['Trip Duration'].mean()
     print('Mean trip duration:', mean_duration)
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nCalculation time: %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
@@ -191,7 +191,7 @@ def user_stats(df):
         print('Most recent year of birth:',recent_birth)
         print('Most common year of birth:',common_birth)
         
-    print("\nThis took %s seconds." % (time.time() - start_time))
+    print("\nCalculation time: %s seconds." % (time.time() - start_time))
     print('-'*40)
 
 
@@ -212,7 +212,7 @@ def display_data(df):
         elif answer.lower() == 'no':
             return
         else:
-            print('Invalid input! Please type \'yes\' or \'no\'')   
+            print('Invalid input entered. Please type \'yes\' or \'no\'')   
 
 
 def main():
