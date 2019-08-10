@@ -26,7 +26,7 @@ def get_filters():
         print('Please choose a city to get data from.')
         print('Options: chicago, new york city, washington')
         
-        city = input('Your pick: ')
+        city = input('Type here: ')
         
         if city.lower() not in cities:
             print('Invalid input!\n')
@@ -39,7 +39,7 @@ def get_filters():
         print('Please choose a month to get data from.')
         print('Options: all, january, february, ... , june')
         
-        month = input('Your pick: ')
+        month = input('Type here: ')
         
         if (month.lower() != 'all') and (month.lower() not in months):
             print('Invalid input!\n')
@@ -53,7 +53,7 @@ def get_filters():
         print('Please choose a day to get data from.')
         print('Options: all, monday, tuesday, ... sunday')
         
-        day = input('Your pick: ')
+        day = input('Type here: ')
         
         if (day.lower() != 'all') and (day.lower() not in days):
             print('Invalid input!\n')
