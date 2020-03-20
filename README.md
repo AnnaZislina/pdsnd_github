@@ -1,34 +1,37 @@
 ### Date created
+
 Saturday, August 3, 2019
 
 ### Project Title
+
 Explore US Bikeshare Data
 
 ### Description
+
 This project allows you to explore bikeshare data provided by Motivate (a bike share system provider)
 in three large cities: Chicago, New York City, and Washington, DC.
 It allows you to receive statistics and compare between the cities.
 
 ## Functions:
 
-#1 Popular times of travel (i.e., occurs most often in the start time)
+# 1 Popular times of travel (i.e., occurs most often in the start time)
 
   -  most common month
   -  most common day of week
   -  most common hour of day
 
-#2 Popular stations and trip
+# 2 Popular stations and trip
 
   -  most common start station
   -  most common end station
   -  most common trip from start to end (i.e., most frequent combination of start station and end station)
 
-#3 Trip duration
+# 3 Trip duration
 
   -  total travel time
   -  average travel time
 
-#4 User info
+# 4 User info
 
   -  counts of each user type
   -  counts of each gender (only available for NYC and Chicago)
@@ -48,7 +51,8 @@ Used the following URLs to help me create the project:
 - https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_numpy.html#pandas.DataFrame.to_numpy - Converts dataframe to numpy array
 - https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iloc.html - lioc method
 
-###License
+### License
+
 MIT License
 
 Copyright (c) 2019 Udacity / Emanuel Gabbay
